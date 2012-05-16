@@ -10,6 +10,7 @@
 
 @property (nonatomic, strong) IBOutlet UIBarButtonItem *cameraButton;
 
+@property (nonatomic, retain) IBOutlet UIImageView *thumbView;
 @property (nonatomic, retain) IBOutlet UIImageView *imageView;
 
 @property (nonatomic, strong) IBOutlet UIToolbar *toolbar;

@@ -4,6 +4,7 @@
  */
 
 #import "FirstViewController.h"
+#import <AssetsLibrary/ALAsset.h>
 
 @interface FirstViewController ()
 - (void)onClickCameraButton;
@@ -11,6 +12,7 @@
 
 @implementation FirstViewController
 @synthesize cameraButton;
+@synthesize thumbView;
 @synthesize imageView;
 @synthesize toolbar;
 - (void)dealloc {
@@ -85,9 +87,32 @@
 #pragma mark -
 #pragma mark UIImagePickerControllerDelegate
 
-- (void)imagePickerController:(UIImagePickerController *)picker 
-        didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo {
-    [imageView setImage:image];
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    NSURL *imageURL = [info valueForKey:UIImagePickerControllerReferenceURL];
+    ALAssetsLibraryAssetForURLResultBlock resultblock = ^(ALAsset *myasset)
+    {
+        CGImageRef thumbrefs = [myasset thumbnail];
+        if (thumbrefs) {
+            UIImage *thumbnail = [UIImage imageWithCGImage:thumbrefs];
+            [thumbView setImage:thumbnail];
+        }
+        ALAssetRepresentation *representation = [myasset defaultRepresentation];
+        UIImage *image = [UIImage imageWithCGImage:[representation fullResolutionImage]
+                                           scale:[representation scale]
+                                     orientation:[representation orientation]];
+        [imageView setImage:image];
+    };
+    ALAssetsLibraryAccessFailureBlock failureblock  = ^(NSError *myerror)
+    {
+        NSLog(@"booya, cant get image - %@",[myerror localizedDescription]);
+    };
+
+    if(imageURL) {
+        ALAssetsLibrary* assetslibrary = [[[ALAssetsLibrary alloc] init] autorelease];
+        [assetslibrary assetForURL:imageURL 
+                       resultBlock:resultblock
+                      failureBlock:failureblock];
+    }
     [self dismissModalViewControllerAnimated:YES];
 }
 

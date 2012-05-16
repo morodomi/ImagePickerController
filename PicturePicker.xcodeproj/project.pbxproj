@@ -15,6 +15,7 @@
 		F1FF80B51563803200B5A42C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FF80B41563803200B5A42C /* AppDelegate.m */; };
 		F1FF80C51563806400B5A42C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FF80C31563806400B5A42C /* FirstViewController.m */; };
 		F1FF80C61563806400B5A42C /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1FF80C41563806400B5A42C /* FirstViewController.xib */; };
+		F1FF80DE15639B7C00B5A42C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1FF80DD15639B7C00B5A42C /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		F1FF80C21563806400B5A42C /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = Controller/FirstViewController.h; sourceTree = "<group>"; };
 		F1FF80C31563806400B5A42C /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = Controller/FirstViewController.m; sourceTree = "<group>"; };
 		F1FF80C41563806400B5A42C /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FirstViewController.xib; path = Controller/FirstViewController.xib; sourceTree = "<group>"; };
+		F1FF80DD15639B7C00B5A42C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1FF80DE15639B7C00B5A42C /* AssetsLibrary.framework in Frameworks */,
 				F1FF80A51563803200B5A42C /* UIKit.framework in Frameworks */,
 				F1FF80A71563803200B5A42C /* Foundation.framework in Frameworks */,
 				F1FF80A91563803200B5A42C /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +70,7 @@
 		F1FF80A31563803200B5A42C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F1FF80DD15639B7C00B5A42C /* AssetsLibrary.framework */,
 				F1FF80A41563803200B5A42C /* UIKit.framework */,
 				F1FF80A61563803200B5A42C /* Foundation.framework */,
 				F1FF80A81563803200B5A42C /* CoreGraphics.framework */,
