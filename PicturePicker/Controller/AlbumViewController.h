@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AlbumViewController.h
 //  PicturePicker
 //
 //  Created by 政洋 諸富 on 12/05/16.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface AlbumViewController : UIViewController
 
 @end

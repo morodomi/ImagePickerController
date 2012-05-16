@@ -1,24 +1,21 @@
-//
-//  AppDelegate.m
-//  PicturePicker
-//
-//  Created by 政洋 諸富 on 12/05/16.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
-//
+/**
+ * @author dommy <shonan.shachu at gmail.com>
+ * @version 1.0.0 updated on 2012-05-16
+ */
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+#import "FirstViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize viewController = _viewController;
+@synthesize firstViewController = _firstViewController;
 
 - (void)dealloc
 {
     [_window release];
-    [_viewController release];
+    [_firstViewController release];
     [super dealloc];
 }
 
@@ -26,8 +23,8 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
-    self.window.rootViewController = self.viewController;
+    self.firstViewController = [[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil] autorelease];
+    self.window.rootViewController = self.firstViewController;
     [self.window makeKeyAndVisible];
     return YES;
 }

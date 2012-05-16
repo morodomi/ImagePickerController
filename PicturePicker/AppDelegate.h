@@ -1,19 +1,16 @@
-//
-//  AppDelegate.h
-//  PicturePicker
-//
-//  Created by 政洋 諸富 on 12/05/16.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
-//
+/**
+ * @author dommy <shonan.shachu at gmail.com>
+ * @version 1.0.0 updated on 2012-05-16
+ */
 
 #import <UIKit/UIKit.h>
 
-@class ViewController;
+@class FirstViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) ViewController *viewController;
+@property (strong, nonatomic) FirstViewController *firstViewController;
 
 @end

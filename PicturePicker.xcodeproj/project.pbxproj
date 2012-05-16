@@ -13,8 +13,8 @@
 		F1FF80AF1563803200B5A42C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1FF80AD1563803200B5A42C /* InfoPlist.strings */; };
 		F1FF80B11563803200B5A42C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FF80B01563803200B5A42C /* main.m */; };
 		F1FF80B51563803200B5A42C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FF80B41563803200B5A42C /* AppDelegate.m */; };
-		F1FF80B81563803200B5A42C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FF80B71563803200B5A42C /* ViewController.m */; };
-		F1FF80BB1563803200B5A42C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1FF80B91563803200B5A42C /* ViewController.xib */; };
+		F1FF80C51563806400B5A42C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FF80C31563806400B5A42C /* FirstViewController.m */; };
+		F1FF80C61563806400B5A42C /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1FF80C41563806400B5A42C /* FirstViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +22,15 @@
 		F1FF80A41563803200B5A42C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F1FF80A61563803200B5A42C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F1FF80A81563803200B5A42C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F1FF80AC1563803200B5A42C /* PicturePicker-Info.plist */ = {isa = PBXFileReference; path = "PicturePicker-Info.plist"; sourceTree = "<group>"; };
+		F1FF80AC1563803200B5A42C /* PicturePicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PicturePicker-Info.plist"; sourceTree = "<group>"; };
 		F1FF80AE1563803200B5A42C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F1FF80B01563803200B5A42C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F1FF80B21563803200B5A42C /* PicturePicker-Prefix.pch */ = {isa = PBXFileReference; path = "PicturePicker-Prefix.pch"; sourceTree = "<group>"; };
-		F1FF80B31563803200B5A42C /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		F1FF80B21563803200B5A42C /* PicturePicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PicturePicker-Prefix.pch"; sourceTree = "<group>"; };
+		F1FF80B31563803200B5A42C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1FF80B41563803200B5A42C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F1FF80B61563803200B5A42C /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		F1FF80B71563803200B5A42C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F1FF80BA1563803200B5A42C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		F1FF80C21563806400B5A42C /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = Controller/FirstViewController.h; sourceTree = "<group>"; };
+		F1FF80C31563806400B5A42C /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = Controller/FirstViewController.m; sourceTree = "<group>"; };
+		F1FF80C41563806400B5A42C /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FirstViewController.xib; path = Controller/FirstViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +79,7 @@
 			children = (
 				F1FF80B31563803200B5A42C /* AppDelegate.h */,
 				F1FF80B41563803200B5A42C /* AppDelegate.m */,
-				F1FF80B61563803200B5A42C /* ViewController.h */,
-				F1FF80B71563803200B5A42C /* ViewController.m */,
-				F1FF80B91563803200B5A42C /* ViewController.xib */,
+				F1FF80C11563804700B5A42C /* Controller */,
 				F1FF80AB1563803200B5A42C /* Supporting Files */,
 			);
 			path = PicturePicker;
@@ -96,6 +94,16 @@
 				F1FF80B21563803200B5A42C /* PicturePicker-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F1FF80C11563804700B5A42C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF80C21563806400B5A42C /* FirstViewController.h */,
+				F1FF80C31563806400B5A42C /* FirstViewController.m */,
+				F1FF80C41563806400B5A42C /* FirstViewController.xib */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1FF80AF1563803200B5A42C /* InfoPlist.strings in Resources */,
-				F1FF80BB1563803200B5A42C /* ViewController.xib in Resources */,
+				F1FF80C61563806400B5A42C /* FirstViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +170,7 @@
 			files = (
 				F1FF80B11563803200B5A42C /* main.m in Sources */,
 				F1FF80B51563803200B5A42C /* AppDelegate.m in Sources */,
-				F1FF80B81563803200B5A42C /* ViewController.m in Sources */,
+				F1FF80C51563806400B5A42C /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,14 +183,6 @@
 				F1FF80AE1563803200B5A42C /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		F1FF80B91563803200B5A42C /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F1FF80BA1563803200B5A42C /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
